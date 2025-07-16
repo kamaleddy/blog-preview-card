@@ -113,6 +113,21 @@ h1 {
   margin-bottom: 12px;
 }
 
+h1:hover {
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+h1:active {
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+h1:focus {
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
 p.summary {
   font-size: var(--para-font-size);
   color: var(--secondary-color);
