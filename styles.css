@@ -39,7 +39,7 @@
 }
 
 *:not(html):not(body) {
-  /* border: 1px dashed #525252; */
+  border: 1px dashed #525252;
 }
 
 :root {
@@ -76,7 +76,6 @@ main {
 
 span {
   font-weight: 800;
-  color: var(--main-color);
 }
 
 .blog-image {
@@ -91,49 +90,49 @@ span {
   border-radius: 10px;
 }
 
-.category {
+.content p:first-child {
   background: var(--bg-color);
   font-size: var(--sub-para-font-size);
   font-weight: 800;
   padding: 0.25rem 0.75rem;
   display: inline-block;
-  margin-bottom: 12px;
+  margin-block-end: 12px;
 }
 
-p.published {
+.content p:nth-child(2) {
   font-size: var(--sub-para-font-size);
   color: var(--main-color);
-  margin-bottom: 12px;
+  margin-block-end: 12px;
 }
 
-h1 {
+.content h1 {
   font-size: var(--title-font-size);
   color: var(--main-color);
   font-weight: 800;
-  margin-bottom: 12px;
+  margin-block-end: 12px;
 }
 
-h1:hover {
+.content h1:hover {
   color: var(--bg-color);
   cursor: pointer;
 }
 
-h1:active {
+.content h1:active {
   color: var(--bg-color);
   cursor: pointer;
 }
 
-h1:focus {
+.content h1:focus {
   color: var(--bg-color);
   cursor: pointer;
 }
 
-p.summary {
+.content p:last-child {
   font-size: var(--para-font-size);
   color: var(--secondary-color);
 }
 
-section.author {
+.author {
   display: flex;
   align-items: center;
   gap: 12px;
