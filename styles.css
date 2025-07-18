@@ -39,7 +39,7 @@
 }
 
 *:not(html):not(body) {
-  border: 1px dashed #525252;
+  /* border: 1px dashed #525252; */
 }
 
 :root {
@@ -54,19 +54,20 @@
 }
 
 body {
-  width: 100vw;
   height: 100vh;
   font-family: "Figtree", sans-serif;
   background: var(--bg-color);
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 main {
-  width: clamp(300px, 26.67vw, 384px);
-  margin: auto;
+  width: 24rem;
   background: var(--neg-color);
   padding: var(--title-font-size);
-  border-radius: 20px;
+  border-radius: 1.25rem;
   border: 1px solid var(--main-color);
   box-shadow: 8px 8px 0 var(--main-color);
   display: flex;
@@ -80,14 +81,14 @@ span {
 
 .blog-image {
   width: 100%;
-  height: auto;
+  height: 200px;
+  background: yellowgreen;
 }
 
 .blog-image img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
+  height: 100%;
+  border-radius: 0.625rem;
 }
 
 .content p:first-child {
@@ -96,20 +97,20 @@ span {
   font-weight: 800;
   padding: 0.25rem 0.75rem;
   display: inline-block;
-  margin-block-end: 12px;
+  margin-block-end: 0.75rem;
 }
 
 .content p:nth-child(2) {
   font-size: var(--sub-para-font-size);
   color: var(--main-color);
-  margin-block-end: 12px;
+  margin-block-end: 0.75rem;
 }
 
 .content h1 {
   font-size: var(--title-font-size);
   color: var(--main-color);
   font-weight: 800;
-  margin-block-end: 12px;
+  margin-block-end: 0.75rem;
 }
 
 .content h1:hover {
@@ -135,7 +136,7 @@ span {
 .author {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0.75rem;
 }
 
 .user-pic {
@@ -150,4 +151,18 @@ span {
 
 .author p {
   font-size: var(--sub-para-font-size);
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 20.4375rem;
+  }
+
+  .blog-image {
+    width: 279px;
+  }
+
+  .blog-image img {
+    object-fit: cover;
+  }
 }
