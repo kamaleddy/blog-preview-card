@@ -38,10 +38,6 @@
   box-sizing: border-box;
 }
 
-*:not(html):not(body) {
-  /* border: 1px dashed #525252; */
-}
-
 :root {
   --bg-color: rgb(244, 208, 78);
   --main-color: rgb(17, 17, 17);
@@ -49,8 +45,10 @@
   --neg-color: rgb(255, 255, 255);
 
   --title-font-size: 1.5rem;
+  --mobile-title-font-size: 1.25rem;
   --para-font-size: 1rem;
   --sub-para-font-size: 0.875rem;
+  --p-mobile-font-size: 0.75rem;
 }
 
 body {
@@ -79,10 +77,14 @@ span {
   font-weight: 800;
 }
 
+p,
+h1 {
+  line-height: 150%;
+}
+
 .blog-image {
   width: 100%;
   height: 200px;
-  background: yellowgreen;
 }
 
 .blog-image img {
@@ -155,14 +157,28 @@ span {
 
 @media (max-width: 375px) {
   main {
-    width: 20.4375rem;
+    width: 327px;
   }
 
   .blog-image {
-    width: 279px;
+    width: 100%;
   }
 
   .blog-image img {
+    width: 100%;
     object-fit: cover;
+  }
+
+  .content p:first-child,
+  .content p:nth-child(2) {
+    font-size: var(--p-mobile-font-size);
+  }
+
+  .content h1 {
+    font-size: var(--mobile-title-font-size);
+  }
+
+  .content p:last-child {
+    font-size: var(--sub-para-font-size);
   }
 }
