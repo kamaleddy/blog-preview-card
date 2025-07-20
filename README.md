@@ -32,7 +32,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [My solution](https://www.frontendmentor.io/solutions/blog-preview-card-using-flexbox-and-media-query-hNhFcWDSiK)
 - Live Site URL: [My Github live site](https://kamaleddy.github.io/blog-preview-card/)
 
 ## My process
